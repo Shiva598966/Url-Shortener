@@ -1,16 +1,214 @@
-# React + Vite
+# 🌐 URL Shortener
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern full-stack URL Shortener built with **React**, **Node.js**, **Express**, and **MongoDB**.
 
-Currently, two official plugins are available:
+This application allows users to shorten long URLs, manage them through a clean dashboard, copy shortened links, track click counts, and delete URLs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🔗 Shorten long URLs
+* 🚀 Redirect to the original URL
+* 📋 Copy shortened URL to clipboard
+* 📜 View previously created URLs
+* 🗑 Delete URLs
+* 👆 Track click count
+* ✅ URL validation
+* ⏳ Loading spinner while creating URLs
+* 🔔 Toast notifications for success and error messages
+* 🎨 Modern glassmorphism UI with responsive design
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠 Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* CSS3
+* React Hot Toast
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+* Mongoose
+
+---
+
+## 📂 Project Structure
+
+```
+url-shortener/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/url-shortener.git
+```
+
+```bash
+cd url-shortener
+```
+
+---
+
+### 2. Install frontend dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+### 3. Install backend dependencies
+
+```bash
+cd ../backend
+npm install
+```
+
+---
+
+### 4. Configure Environment Variables
+
+Create a `.env` file inside the **backend** folder.
+
+```env
+MONGO_URI=your_mongodb_connection_string
+PORT=3000
+```
+
+---
+
+### 5. Start Backend
+
+```bash
+cd backend
+npm start
+```
+
+or
+
+```bash
+npm run dev
+```
+
+---
+
+### 6. Start Frontend
+
+Open another terminal.
+
+```bash
+cd frontend
+npm run dev
+```
+
+---
+
+## 📷 Screenshots
+
+You can add screenshots here after deployment.
+
+Example:
+
+```
+Home Page
+
+History Dashboard
+
+URL Created Successfully
+```
+
+---
+
+## 📌 API Endpoints
+
+### Create Short URL
+
+```
+POST /shorten
+```
+
+---
+
+### Redirect
+
+```
+GET /:shortCode
+```
+
+---
+
+### Get All URLs
+
+```
+GET /urls
+```
+
+---
+
+### Delete URL
+
+```
+DELETE /urls/:id
+```
+
+---
+
+## 🚀 Future Improvements
+
+* ✨ Custom short URLs
+* 📊 Analytics dashboard
+* 🔍 Search history
+* 📄 Pagination
+* 👤 User authentication
+* ☁️ Cloud deployment
+* 📱 Progressive Web App (PWA)
+
+---
+
+## 📸 Preview
+
+Current functionality includes:
+
+* Creating short URLs
+* Redirecting to original URLs
+* Viewing URL history
+* Copying URLs
+* Deleting URLs
+* Tracking click counts
+
+---
+
+## 👨‍💻 Author
+
+**Shiva**
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
